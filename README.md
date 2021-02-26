@@ -10,5 +10,9 @@ Hráč se pomocí svých vojáků snaží zničit základnu protivníka a zárov
 * Barbar: 40Ž 15S
 * Rytíř: 35Ž 30S
 * Zlobr: 60Ž 15S
+* Základna 500Ž 
 
-Rytíř se na cestě potká s Barbarem. V prvním kontaktu rytíř ubere barbarovi 30Ž a sám přijde o 15Ž. Jelikož ani jeden nepadnul následuje druhý kontakt. Barbar přijde o svých posledních 5Ž a umírá. Rytíř příjde o dalších 15Ž, ale přežije
+Rytíř se na cestě potká s Barbarem. V prvním kontaktu rytíř ubere barbarovi 30Ž a sám přijde o 15Ž. Jelikož ani jeden nepadnul následuje druhý kontakt. Barbar přijde o svých posledních 5Ž a umírá. Rytíř příjde o dalších 15Ž, ale přežije, tak pokračuje dál, dokud nepotká dalšího vojáka nebo nedojde až k základně.
+
+## Hráč
+## AI
