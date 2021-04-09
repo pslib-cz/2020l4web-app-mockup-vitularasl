@@ -30,64 +30,67 @@
 .container input {
     display: none;
 }
-.container .checkmark p {
+.postavy .container .checkmark {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
 }
-.container .checkmark p::before {
+.postavy .container .checkmark i {
     content: "";
     display: block;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     background-size: cover; 
     margin-right: 0;
 }
-#vesnican .checkmark p::before {
+.postavy .container .checkmark p {
+    margin: 0;
+}
+#vesnican .checkmark i {
     background-image: url(./ostatní/ikony/cow.png);
 }
 
-#vesnican:hover input ~ .checkmark p::before{
+#vesnican:hover input ~ .checkmark i{
     background-image: url(./ostatní/ikony/coww.png);
 }
   
-#vesnican input:checked ~ .checkmark p::before {
+#vesnican input:checked ~ .checkmark i {
     background-image: url(./ostatní/ikony/coww.png);
 }
 
-#barbar .checkmark p::before {
+#barbar .checkmark i {
     background-image: url(./ostatní/ikony/viking-helmet.png);
 }
 
-#barbar:hover input ~ .checkmark p::before{
+#barbar:hover input ~ .checkmark i{
     background-image: url(./ostatní/ikony/viking-helmetw.png);
 }
   
-#barbar input:checked ~ .checkmark p::before {
+#barbar input:checked ~ .checkmark i {
     background-image: url(./ostatní/ikony/viking-helmetw.png);
 }
 
-#rytir .checkmark p::before {
+#rytir .checkmark i {
     background-image: url(./ostatní/ikony/helmet.png);
 }
 
-#rytir:hover input ~ .checkmark p::before{
+#rytir:hover input ~ .checkmark i{
     background-image: url(./ostatní/ikony/helmetw.png);
 }
   
-#rytir input:checked ~ .checkmark p::before {
+#rytir input:checked ~ .checkmark i {
     background-image: url(./ostatní/ikony/helmetw.png);
 }
-#zlobr .checkmark p::before {
+#zlobr .checkmark i {
     background-image: url(./ostatní/ikony/orc.png);
 }
 
-#zlobr:hover input ~ .checkmark p::before{
+#zlobr:hover input ~ .checkmark i{
     background-image: url(./ostatní/ikony/orcw.png);
 }
   
-#zlobr input:checked ~ .checkmark p::before {
+#zlobr input:checked ~ .checkmark i {
     background-image: url(./ostatní/ikony/orcw.png);
 }
 
@@ -98,13 +101,84 @@
 }
 
 
-
-
 .header {
     display: flex;
     flex-direction: row;
-    max-width: 50%;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 45%;
 }
+
+.header span {
+    border: 2px black solid;
+    padding: 2px;
+    border-radius: 3px;
+    background-color: white;
+    
+}
+.header span:hover {
+    color: white;
+    background-color: black;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .overlay-content ul {
+      list-style: none;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
 
 
 #zivoty {
@@ -180,16 +254,27 @@
 #R5S8startai {top: 567px; left: 731px}
 
 
-@media only screen and (min-width: 500px) and (max-width: 910px) {
+@media only screen and (min-width: 560px) and (max-width: 910px) {
     .hra {
         width: 510px;
         height: 420px;
     }
+    .postavy .container .checkmark p {
+        display: none;
+    }
 }
-
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 490px) and (max-width: 560px) {
     .hra {
         width: 560px;
         height: 320px;
+    }
+}
+@media only screen and (max-width: 490px) {
+    .hra {
+        width: 100vw;
+        height: 320px;
+    }
+    .postavy .container .checkmark p {
+        display: none;
     }
 }
