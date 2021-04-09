@@ -1,0 +1,195 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    min-width: 80px;
+    justify-content: space-between;
+}
+
+
+.hra {
+    width: 900px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+    background-image: url(./ostatní/mapa3.svg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+#start {
+ size: 2em;
+}
+.postavy {
+    max-width: 35%;
+    margin-left: 20px;
+}
+.container {
+    cursor: pointer;
+}
+
+.container input {
+    display: none;
+}
+.container .checkmark p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+.container .checkmark p::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-size: cover; 
+    margin-right: 0;
+}
+#vesnican .checkmark p::before {
+    background-image: url(./ostatní/ikony/cow.png);
+}
+
+#vesnican:hover input ~ .checkmark p::before{
+    background-image: url(./ostatní/ikony/coww.png);
+}
+  
+#vesnican input:checked ~ .checkmark p::before {
+    background-image: url(./ostatní/ikony/coww.png);
+}
+
+#barbar .checkmark p::before {
+    background-image: url(./ostatní/ikony/viking-helmet.png);
+}
+
+#barbar:hover input ~ .checkmark p::before{
+    background-image: url(./ostatní/ikony/viking-helmetw.png);
+}
+  
+#barbar input:checked ~ .checkmark p::before {
+    background-image: url(./ostatní/ikony/viking-helmetw.png);
+}
+
+#rytir .checkmark p::before {
+    background-image: url(./ostatní/ikony/helmet.png);
+}
+
+#rytir:hover input ~ .checkmark p::before{
+    background-image: url(./ostatní/ikony/helmetw.png);
+}
+  
+#rytir input:checked ~ .checkmark p::before {
+    background-image: url(./ostatní/ikony/helmetw.png);
+}
+#zlobr .checkmark p::before {
+    background-image: url(./ostatní/ikony/orc.png);
+}
+
+#zlobr:hover input ~ .checkmark p::before{
+    background-image: url(./ostatní/ikony/orcw.png);
+}
+  
+#zlobr input:checked ~ .checkmark p::before {
+    background-image: url(./ostatní/ikony/orcw.png);
+}
+
+.informace {
+    max-width: 100%;
+    min-width: 300px;
+    margin: 8px 1em 0 1em;
+}
+
+
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    max-width: 50%;
+}
+
+
+#zivoty {
+    margin-right: 2em;
+    
+}
+
+#zivoty, #zivotyai {
+    width: 120px;
+} 
+#penize {
+    width: 40px;
+}
+#penize, #zivotyai, #zivoty {
+    background-color: white;
+    border: 2px black solid;
+    padding: 2px;
+    border-radius: 3px;
+
+}
+
+.pohyb  span {
+    position: absolute;
+    color: white;
+}
+
+#R1S1start {top: 364px; left: 164px;}
+#R2S1start {top: 416px; left: 164px;}
+#R3S1start {top: 463px; left: 164px;}
+#R4S1start {top: 511px; left: 164px;}
+#R5S1start {top: 567px; left: 164px;}
+
+#R1S2 {top: 364px; left: 219px;}
+#R2S2 {top: 416px; left: 219px;}
+#R3S2 {top: 463px; left: 219px;}
+#R4S2 {top: 511px; left: 219px;}
+#R5S2 {top: 567px; left: 219px;}
+
+#R1S3 {top: 364px; left: 311px;}
+#R2S3 {top: 416px; left: 311px;}
+#R3S3 {top: 463px; left: 311px;}
+#R4S3 {top: 511px; left: 311px;}
+#R5S3 {top: 567px; left: 311px;}
+
+#R1S4 {top: 364px; left: 400px;}
+#R2S4 {top: 416px; left: 400px;}
+#R3S4 {top: 463px; left: 400px;}
+#R4S4 {top: 511px; left: 400px;}
+#R5S4 {top: 567px; left: 400px;}
+
+#R1S5 {top: 364px; left: 493px;}
+#R2S5 {top: 416px; left: 493px;}
+#R3S5 {top: 463px; left: 493px;}
+#R4S5 {top: 511px; left: 493px;}
+#R5S5 {top: 567px; left: 493px;}
+
+#R1S6 {top: 364px; left: 583px;}
+#R2S6 {top: 416px; left: 583px;}
+#R3S6 {top: 463px; left: 583px;}
+#R4S6 {top: 511px; left: 583px;}
+#R5S6 {top: 567px; left: 583px;}
+
+#R1S7 {top: 364px; left: 672px;}
+#R2S7 {top: 416px; left: 672px;}
+#R3S7 {top: 463px; left: 672px;}
+#R4S7 {top: 511px; left: 672px;}
+#R5S7 {top: 567px; left: 672px;}
+
+#R1S8startai {top: 364px; left: 731px}
+#R2S8startai {top: 416px; left: 731px}
+#R3S8startai {top: 463px; left: 731px}
+#R4S8startai {top: 511px; left: 731px}
+#R5S8startai {top: 567px; left: 731px}
+
+
+@media only screen and (min-width: 500px) and (max-width: 910px) {
+    .hra {
+        width: 510px;
+        height: 420px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .hra {
+        width: 560px;
+        height: 320px;
+    }
+}
