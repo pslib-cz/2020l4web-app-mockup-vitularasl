@@ -1,3 +1,7 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
 .row {
     display: flex;
     flex-direction: row;
@@ -100,7 +104,10 @@
     margin: 8px 1em 0 1em;
 }
 
-
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
 .header {
     display: flex;
     flex-direction: row;
@@ -147,7 +154,9 @@
     text-align: left;
   }
   .overlay-content ul {
-      list-style: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
   }
   
   .overlay a {
