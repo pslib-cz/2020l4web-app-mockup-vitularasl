@@ -214,54 +214,50 @@ h1, h2, h3 {
     color: white;
 }
 
-#R1S1start {top: 364px; left: 164px;}
-#R2S1start {top: 416px; left: 164px;}
-#R3S1start {top: 463px; left: 164px;}
-#R4S1start {top: 511px; left: 164px;}
-#R5S1start {top: 567px; left: 164px;}
 
-#R1S2 {top: 364px; left: 219px;}
-#R2S2 {top: 416px; left: 219px;}
-#R3S2 {top: 463px; left: 219px;}
-#R4S2 {top: 511px; left: 219px;}
-#R5S2 {top: 567px; left: 219px;}
 
-#R1S3 {top: 364px; left: 311px;}
-#R2S3 {top: 416px; left: 311px;}
-#R3S3 {top: 463px; left: 311px;}
-#R4S3 {top: 511px; left: 311px;}
-#R5S3 {top: 567px; left: 311px;}
+.rada1 {bottom: 213px}
+.rada2 {bottom: 165px;}
+.rada3 {bottom: 120px;}
+.rada4 {bottom: 75px;}
+.rada5 {bottom: 15px;}
 
-#R1S4 {top: 364px; left: 400px;}
-#R2S4 {top: 416px; left: 400px;}
-#R3S4 {top: 463px; left: 400px;}
-#R4S4 {top: 511px; left: 400px;}
-#R5S4 {top: 567px; left: 400px;}
+.sloupec1 {left: 147px}
+.sloupec2 {left: 209px}
+.sloupec3 {left: 301px}
+.sloupec4 {left: 390px}
+.sloupec5 {left: 483px}
+.sloupec6 {left: 573px}
+.sloupec7 {left: 662px}
+.sloupec8 {left: 720px} 
 
-#R1S5 {top: 364px; left: 493px;}
-#R2S5 {top: 416px; left: 493px;}
-#R3S5 {top: 463px; left: 493px;}
-#R4S5 {top: 511px; left: 493px;}
-#R5S5 {top: 567px; left: 493px;}
+.vesnican {background-image: url(ostatní/vidlak.svg);}
+.vesnicanAI {background-image: url(ostatní/vidlakAI.svg);}
 
-#R1S6 {top: 364px; left: 583px;}
-#R2S6 {top: 416px; left: 583px;}
-#R3S6 {top: 463px; left: 583px;}
-#R4S6 {top: 511px; left: 583px;}
-#R5S6 {top: 567px; left: 583px;}
+.rytir {background-image: url(ostatní/rytir.svg);}
+.rytirAI {background-image: url(ostatní/rytirAI.svg);}
 
-#R1S7 {top: 364px; left: 672px;}
-#R2S7 {top: 416px; left: 672px;}
-#R3S7 {top: 463px; left: 672px;}
-#R4S7 {top: 511px; left: 672px;}
-#R5S7 {top: 567px; left: 672px;}
+.barbar {background-image: url(ostatní/barbar.svg);}
+.barbarAI {background-image: url(ostatní/barbarAI.svg);}
 
-#R1S8startai {top: 364px; left: 731px}
-#R2S8startai {top: 416px; left: 731px}
-#R3S8startai {top: 463px; left: 731px}
-#R4S8startai {top: 511px; left: 731px}
-#R5S8startai {top: 567px; left: 731px}
+.barbar, .barbarAI, .rytir, .rytirAI, .vesnican, .vesnicanAI {
+    width: 50px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
 
+
+.zlobr {background-image: url(ostatní/zlobr.svg);}
+.zlobrAI {background-image: url(ostatní/zlobrAI.svg);}
+.zlobr, .zlobrAI {
+    width: 50px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
 
 @media only screen and (min-width: 560px) and (max-width: 910px) {
     .hra {
@@ -271,11 +267,38 @@ h1, h2, h3 {
     .postavy .container .checkmark p {
         display: none;
     }
+
+    .rada1 {bottom: 150px}
+    .rada2 {bottom: 110px;}
+    .rada3 {bottom: 85px;}
+    .rada4 {bottom: 45px;}
+    .rada5 {bottom: 5px;}
+
+    .sloupec1 {left: 45px}
+    .sloupec2 {left: 85px}
+    .sloupec3 {left: 145px}
+    .sloupec4 {left: 210px}
+    .sloupec5 {left: 273px}
+    .sloupec6 {left: 340px}
+    .sloupec7 {left: 400px}
+    .sloupec8 {left: 440px} 
+
+    .barbar, .barbarAI, .rytir, .rytirAI, .vesnican, .vesnicanAI {
+        height: 60px;
+        width: 40px;
+    }
+    .zlobr, .zlobrAI {
+        height: 80px;
+        width: 50px;
+    }
 }
 @media only screen and (min-width: 490px) and (max-width: 560px) {
     .hra {
         width: 560px;
         height: 320px;
+    }
+    .postavy .container .checkmark p {
+        display: none;
     }
 }
 @media only screen and (max-width: 490px) {
