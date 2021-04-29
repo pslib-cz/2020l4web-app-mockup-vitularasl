@@ -259,13 +259,18 @@ h1, h2, h3 {
     background-position: center;
 }
 
-@media only screen and (min-width: 560px) and (max-width: 910px) {
+@media only screen and (min-width: 570px) and (max-width: 910px) {
     .hra {
-        width: 510px;
-        height: 420px;
+        width: 570px;
+        height: 400px;
     }
     .postavy .container .checkmark p {
         display: none;
+    }
+    .header {
+        margin-left: 0;
+        justify-content: space-around;
+        width: 100%;
     }
 
     .rada1 {bottom: 150px}
@@ -282,7 +287,7 @@ h1, h2, h3 {
     .sloupec6 {left: 340px}
     .sloupec7 {left: 400px}
     .sloupec8 {left: 440px} 
-
+    
     .barbar, .barbarAI, .rytir, .rytirAI, .vesnican, .vesnicanAI {
         height: 60px;
         width: 40px;
@@ -291,8 +296,9 @@ h1, h2, h3 {
         height: 80px;
         width: 50px;
     }
+    
 }
-@media only screen and (min-width: 490px) and (max-width: 560px) {
+@media only screen and (min-width: 490px) and (max-width: 570px) {
     .hra {
         width: 560px;
         height: 320px;
@@ -300,13 +306,64 @@ h1, h2, h3 {
     .postavy .container .checkmark p {
         display: none;
     }
-}
-@media only screen and (max-width: 490px) {
-    .hra {
-        width: 100vw;
-        height: 320px;
+    .barbar, .barbarAI, .rytir, .rytirAI, .vesnican, .vesnicanAI {
+        height: 60px;
+        width: 30px;
     }
-    .postavy .container .checkmark p {
+    .zlobr, .zlobrAI {
+        height: 60px;
+        width: 30px;
+    }
+    .header {
+        margin-left: 0;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .hra .informace {
+        justify-content: space-around;
+    }
+    
+
+    .rada1 {bottom: 96px}
+    .rada2 {bottom: 110px;}
+    .rada3 {bottom: 85px;}
+    .rada4 {bottom: 45px;}
+    .rada5 {bottom: 5px;}
+
+    .sloupec1 {left: 122px}
+    .sloupec2 {left: 85px}
+    .sloupec3 {left: 145px}
+    .sloupec4 {left: 210px}
+    .sloupec5 {left: 273px}
+    .sloupec6 {left: 340px}
+    .sloupec7 {left: 400px}
+    .sloupec8 {left: 440px} 
+}
+
+@media only screen and (max-width: 490px) {
+    body main {
         display: none;
+    }
+    body .header::after{
+        content: "otoč na délku";
+        width: 150px;
+        height: auto;
+        text-align: center;
+        position: absolute;
+        left:0;
+        right:0;
+        top: 50vh;
+        margin-left:auto;
+        margin-right:auto;
+        font-size: 1.4em;
+        
+
+        
+    }
+    
+    .header {
+        margin-left: 0;
+        justify-content: space-around;
+        width: 100%;
     }
 }
