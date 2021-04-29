@@ -15,7 +15,7 @@ body {
     height: 600px;
     margin: 0 auto;
     position: relative;
-    background-image: url(./ostatní/mapa3.svg);
+    background-image: url(./ostatní/mapahraci.svg);
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -208,6 +208,10 @@ h1, h2, h3 {
     border-radius: 3px;
 
 }
+.header > span {
+    font-size:30px;
+    cursor: pointer;
+}
 
 .pohyb  span {
     position: absolute;
@@ -273,20 +277,20 @@ h1, h2, h3 {
         width: 100%;
     }
 
-    .rada1 {bottom: 150px}
-    .rada2 {bottom: 110px;}
-    .rada3 {bottom: 85px;}
-    .rada4 {bottom: 45px;}
+    .rada1 {bottom: 140px}
+    .rada2 {bottom: 100px;}
+    .rada3 {bottom: 78px;}
+    .rada4 {bottom: 42px;}
     .rada5 {bottom: 5px;}
 
-    .sloupec1 {left: 45px}
-    .sloupec2 {left: 85px}
-    .sloupec3 {left: 145px}
-    .sloupec4 {left: 210px}
-    .sloupec5 {left: 273px}
-    .sloupec6 {left: 340px}
-    .sloupec7 {left: 400px}
-    .sloupec8 {left: 440px} 
+    .sloupec1 {left: 85px}
+    .sloupec2 {left: 120px}
+    .sloupec3 {left: 180px}
+    .sloupec4 {left: 243px}
+    .sloupec5 {left: 300px}
+    .sloupec6 {left: 366px}
+    .sloupec7 {left: 410px}
+    .sloupec8 {left: 452px} 
     
     .barbar, .barbarAI, .rytir, .rytirAI, .vesnican, .vesnicanAI {
         height: 60px;
@@ -295,6 +299,12 @@ h1, h2, h3 {
     .zlobr, .zlobrAI {
         height: 80px;
         width: 50px;
+    }
+    .header > span {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 1.5em;
     }
     
 }
@@ -314,6 +324,9 @@ h1, h2, h3 {
         height: 60px;
         width: 30px;
     }
+    .header > span {
+        font-size: 20px;
+    }
     .header {
         margin-left: 0;
         justify-content: space-around;
@@ -324,20 +337,27 @@ h1, h2, h3 {
     }
     
 
-    .rada1 {bottom: 96px}
-    .rada2 {bottom: 110px;}
-    .rada3 {bottom: 85px;}
-    .rada4 {bottom: 45px;}
-    .rada5 {bottom: 5px;}
+    .rada1 {bottom: 105px}
+    .rada2 {bottom: 74px;}
+    .rada3 {bottom: 54px;}
+    .rada4 {bottom: 26px;}
+    .rada5 {bottom: -4px;}
 
-    .sloupec1 {left: 122px}
-    .sloupec2 {left: 85px}
-    .sloupec3 {left: 145px}
-    .sloupec4 {left: 210px}
-    .sloupec5 {left: 273px}
+    .sloupec1 {left: 120px}
+    .sloupec2 {left: 150px}
+    .sloupec3 {left: 196px}
+    .sloupec4 {left: 246px}
+    .sloupec5 {left: 294px}
     .sloupec6 {left: 340px}
-    .sloupec7 {left: 400px}
-    .sloupec8 {left: 440px} 
+    .sloupec7 {left: 385px}
+    .sloupec8 {left: 419px} 
+    
+    .header > span {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
 }
 
 @media only screen and (max-width: 490px) {
@@ -356,9 +376,12 @@ h1, h2, h3 {
         margin-left:auto;
         margin-right:auto;
         font-size: 1.4em;
-        
-
-        
+    }
+    .header > span {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 1.5em;
     }
     
     .header {
